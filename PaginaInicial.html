@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+  <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+  <script type="text/javascript" src="PaginaInicial.js"></script>
+  <title>CADMEDUOS - Cadastro de Doadores de Médula Óssea</title>
+  <meta name='keywords' content='' />
+  <meta name='description' content='' />
+  <link href='styles.css' rel='stylesheet' type='text/css'/>
+  <link rel='stylesheet' href="estiloCadastros.css" type="text/css"  media='screen' />
+		<!--
+		
+		========  Projeto apresentado a disciplina de Tecnologia Web  ====== 
+		Professor:orientador: Marcos Rodrigo Sol
+
+		Nome do aplicativo: CADMEDUOS
+
+		Objetivo: Criar um aplicativo Web para auxiliar as pessoas 
+		de como se tornar um voluntário na doação de Medula óssea
+
+		Copiright Mara de Carvalho Silvae Wellington de Sousa
+
+		CSS Based on Metamorphosis Design
+		http://www.metamorphozis.com
+		Released for free under a Creative Commons Attribution 2.5 License
+
+		
+		-->
+</head>
+<script type="text/javascript">
+       window.onload = function() {
+        new dgCidadesEstados(
+            document.getElementById('estado'),
+            document.getElementById('cidade'),
+            true
+        );
+    } 
+ </script>
+   <body>  
+      <div id = 'content_back'>
+	   <div id = 'content_header'>
+	     <div id='content_logo'></div>		  
+			<form>  
+			  <div id="menu">
+				<h1 class="centro"><span style="color: rgb(0,0, 0);"><marquee behavior=scroll>:: CADMEDUOS - CADASTRAMENTO DE DOADORES VOLUNTÁRIOS DE MEDULA ÓSSEA ::</marquee></span><h1>
+				<fieldset class="centro">
+					<img src="Coracao.jpg">
+					<br/>
+					<h2>Escolha seu estado :</h2>
+					<select id="estado" name="estado"></select>
+					</br>
+					<h2>Escolha sua cidade :</h2>
+					<select id="cidade" name="cidade"></select>
+					<br/>	
+					<!--<br><input type="button" name="enviar" value="Enviar" class="boton"><a href = 'ini.html' title ='Entrar'></br>-->
+					<h2 class="botao" ><a href = 'ini.html' title = ''>Entrar</a></h2>
+				</fieldset>					
+			</div>	
+			</form>         
+		  </div> 
+     </div>  
+ </body>
+   <p class='format'>Copyright 2011. Mara e Wellington. Projeto de Tecnologia WEB</p>  
+</html>

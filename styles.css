@@ -1,0 +1,320 @@
+/*
+========  Projeto apresentado a disciplina de Tecnologia Web  ====== 
+Professor:orientador: Marcos Rodrigo Sol
+
+Nome do aplicativo: CADMEDUOS
+
+Objetivo: Criar um aplicativo Web para auxiliar as pessoas 
+de como se tornar um voluntário na doação de Medula óssea
+
+Copiright Mara de Carvalho Silvae Wellington de Sousa
+
+CSS Based on Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+
+*/
+
+*
+{
+margin: 0px;
+padding: 0px;
+}
+
+a:link {
+	color: rgb(255,255,255);
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+a:visited {
+	color: rgb(255,255,255);
+        font-weight: bold;
+}
+
+body {
+	
+	background: rgb(255,255,255) url(images/back_all.jpg) top  repeat-x;
+	font: 13px Arial, Helvetica, sans-serif;
+        color: rgb(0,0,0);
+        font-weight: none;
+}
+
+body h1{
+
+     color: rgb(0,0,0);
+     font-weight: bold;
+}
+
+body h2{
+     color: rgb(0,0,0);
+     font-weight: bold;
+}
+
+body h3{
+     color: rgb(0,0,0);
+     font-weight: bold;
+}
+
+body h4{
+
+     color: rgb(0,0,0);
+     font-weight: bold;
+}
+
+body h5{
+
+    color: rgb(0,0,0);
+     font-weight: bold;
+}
+
+body th{
+   /*color: #662859;*/
+   color: rgb(217,227,245);
+   font-weight: bold;
+}
+
+body td{
+   /*color: #662859;*/
+   color: rgb(217,227,245);
+   font-weight: none; 
+}
+
+#content{
+	width: 100%;
+	text-align: left;
+
+	background: url(images/tecweb_logo.png) no-repeat;
+}
+
+#content_main{
+   width: 783px;
+   padding: 0px;
+   margin-left: 25px;
+   background: url(images/content_middle.gif) right repeat-y rgb(255,255,255);
+   margin-top: 14px;
+
+}
+
+#content_topbar{
+	background: url(images/content_top.gif) top no-repeat ;
+
+}
+
+#content_bottombar{
+	width: 766px;
+	padding: 10px 10px 10px 7px;
+	background: url(images/content_bottom.gif) bottom no-repeat;
+}
+
+#content_back{
+   width: 920px;
+}
+
+#content_header {
+	
+}
+
+#content_logo {
+
+width: 762px;
+height: 77px;
+text-align: right;
+padding-left: 20px;
+padding-top: 43px;
+}
+
+#main_menu{
+
+height: 51px;
+padding-left: 26px;
+width: 900px;
+
+}
+
+#main_menu ul {
+	list-style: none;
+         
+}
+
+#main_menu li {
+	
+	display: inline; 
+		
+}
+
+#main_menu a {
+	float: left;
+	width: 180px;
+	height: 30px;
+        display: block;
+	text-align: center;
+	text-decoration: none;
+	color: rgb(255,255,255);
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 17px;
+	
+}
+
+#main_menu a:hover {
+	width: 180px;
+        height: 31px;
+	color: rgb(255,255,255);
+	text-decoration: none;
+	background: url(images/button_over.jpg) repeat-x;
+        font-weight: bold;
+	font-size: 14px;
+        padding-top: 17px;
+}
+
+
+
+
+#left_menu
+{
+	width: 220px;
+}
+
+#left_menu H3
+{
+   width: 195px;
+   height: 25px;
+   font-size: 14px;
+   font-weight: bold;
+   padding-left: 30px;
+   padding-top: 10px;
+   text-transform: uppercase;
+   text-align: left;
+   color: rgb(255,255,255);
+   background: url(images/title.gif) no-repeat;
+   margin-top: 0px;
+}
+
+#left_menu ul {
+	list-style: none;
+	padding-bottom: 10px;
+	margin-bottom: 10px;	
+}
+
+
+#left_menu ul {
+	border: 0px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+}
+
+
+#left_menu li {
+	padding: 4px 4px;
+	border: 0px;
+}
+
+#left_menu a {
+    
+    text-decoration: none;
+    color: rgb(0,0,0);
+    font-size: 12px;
+}
+
+
+#left_menu a:hover {
+      text-decoration: underline;
+      color: rgb(67,122,161);
+      font-size: 13px;
+}
+
+
+
+#left_menu td
+{
+   color: #3AAC00;
+}
+
+#left_menu th
+{
+  color: #3AAC00;
+}
+
+#left_menu caption
+{
+   color: #3AAC00;
+}
+
+
+#left_menu p
+{
+  padding: 10px;
+}
+
+#left_menu .title_back {
+
+}
+
+#left_menu .title_bottom {
+  padding: 10px;
+  background: url(images/left_bg.jpg) top no-repeat;
+}
+
+
+/*alinhamento do texto à esquerda dentro de content_main*/
+
+#content_text_left{
+   float: right;
+   width: 518px;
+   padding: 0px 5px 0px 10px;
+}
+
+#content_text_left H4{
+	margin: 0;
+	padding: 0px;
+	font-size: 12px;
+	color: rgb(67,122,161);
+}
+
+#content_text_left a{
+   color: #3AAC00;
+   text-decoration: underline;
+}
+
+#content_text_left p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+#content_text_left ol, #content_text_left ul{
+   margin-left: 30px;
+}
+
+
+#content_text_left h2 {
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+	color: rgb(67,122,161);
+}
+
+#footer {
+	height: 64px;
+	padding-top: 30px;
+	background: url(images/footer.jpg) repeat-x bottom;
+}
+
+#footer p {
+	margin: 0;
+	width: 830px;
+	font-size: 10px;
+	padding-left: 100px;
+	text-align: center;
+	color: rgb(0,0,0);
+}
+
+#footer a {
+	color: rgb(125,12,30);
+}

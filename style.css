@@ -1,0 +1,407 @@
+﻿@charset "utf-8";
+
+/*
+========  Projeto apresentado a disciplina de Tecnologia Web  ====== 
+Professor:orientador: Marcos Rodrigo Sol
+
+Nome do aplicativo: CADMEDUOS
+
+Objetivo: Criar um aplicativo Web para auxiliar as pessoas 
+de como se tornar um voluntário na doação de Medula óssea
+
+Copiright Mara de Carvalho Silvae Wellington de Sousa
+
+CSS Based on Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+
+*/
+
+* {
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: middle !important;
+list-style: none;
+border: none;
+text-decoration:none;
+outline:0px;
+}
+
+
+html {
+overflow: -moz-scrollbars-vertical;
+overflow-x:auto;
+}
+
+
+body {
+text-align:center;
+font:65.5% "Trebuchet MS", Arial, Helvetica, sans-serif;
+background:url(images/) #aeaeae no-repeat top center;
+}
+
+
+
+#principal {
+	margin:0 auto;
+	padding:0 17px;
+	width:945px;
+	text-align:left;
+	}
+
+	.header {
+		height:80px;
+		padding:30px 0 0 0;
+		width:100%;
+		}
+
+		
+div.menu ul.principal li {
+background:url(images/bg-li-menu2.png) no-repeat center bottom;
+height:auto;
+padding:8px 0;
+	}
+
+div.menu ul.principal ul li {
+background:none;
+padding:2px 0;
+	}
+
+div.menu ul li a {
+color:#FFFFFF;
+font-size:135%;
+font-weight:bold;
+text-transform:uppercase;
+background:url() no-repeat center left;
+padding:0 0 0 10px;
+	}
+
+div.menu ul li a.no-childs {
+background:url() no-repeat center left;
+	}
+
+
+div.menu ul.principal ul li a {
+background:none;
+color:#555555;
+font-weight:normal !important;
+font-size:105%;
+	}
+
+div.menu ul.principal ul li a.selected {
+color:#a33f1f;
+	}
+
+div.menu ul li.first {
+	}
+
+div.menu ul li.last {
+background:none;
+	}
+
+	div.menu ul li ul li a:hover {
+	color:#a33f1f;
+	}
+
+a.centro {
+width:106px;
+height:41px;
+background:url(images/a-right.jpg) no-repeat left top;
+float:left;
+display:block;
+text-indent:-19999px;
+overflow:hidden;
+margin:0 0 5px 0;
+  }
+
+ body.es a.centro {
+ width:120px;
+ background:url(images/a-right_es.jpg) no-repeat left top;
+  }
+
+body.en a.centro {
+background:url(images/a-right_en.jpg) no-repeat left top;
+ }
+
+	  	
+div.conteudo {
+background:#e7e7e7;
+margin:2px 0 0px 0;
+padding:30px 18px;
+*height:100%;
+   }
+
+div.conteudo .top {
+width:100%;
+height:auto;
+background:url() no-repeat center bottom;
+float:left;
+padding:0 0 20px 0;
+margin:0 0 33px 0;
+	}
+
+div.conteudo .top h2 {
+color:#555555;
+font-size:240%;
+font-weight:normal;
+float:left;
+	}
+
+div.conteudo .top .action {
+float:right;
+width:131px;
+background:url(images/top-conteudo-elements.jpg) no-repeat center top;
+	}
+
+body.es div.conteudo .top .action {
+background:url(images/top-conteudo-elements_es.jpg) no-repeat center top;
+	}
+
+body.en div.conteudo .top .action {
+background:url(images/top-conteudo-elements_en.jpg) no-repeat center top;
+	}
+
+.top .action .basic-action {
+float:left;
+width:85px;
+	}					
+					
+.grid-205.right h3 {
+color:#555555;
+font-size:240%;
+font-weight:normal;
+margin:0 0 0 22px;
+	}
+
+.grid-205.right ul {
+float:left;
+margin:0 0 0 22px;
+background:url(images/bg-li-menu3.png) repeat-y center left;
+padding:0 0 0 7px;
+	}
+
+
+.grid-205.right ul li {
+line-height:17px;
+}
+
+.grid-205.right ul li a {
+color:#a33f1f;
+font-size:115%;
+font-weight:bold
+	}
+
+.grid-205.right ul li.selected a {
+color: #666666;
+	}
+		div.tabs > div {
+			border-top: 1px solid #9e9e9e;
+			}
+
+#first {
+/* background-color: #f00;*/
+clear:both;
+padding:23px 0 0 0;
+	}
+
+#second {
+/*  background-color: #0f0;*/
+clear:both;
+padding:23px 0 0 0;
+	}
+
+.tabs h4 {
+background:#E7E7E7;
+color:#555555;
+float:left;
+font-size:125%;
+padding:0 5px 5px 0;
+position:relative;
+text-transform:uppercase;
+top:-10px;
+clear:both;
+	}
+
+.tabs .imagens {
+border-top:1px solid #aeaeae;
+clear:both;
+margin-bottom:22px;
+	}
+
+.tabs .imagens ul {
+clear:both;
+	}
+
+.tabs .imagens ul li {
+float:left;
+margin-right:5px;
+margin-bottom:5px;
+	}
+
+.tabs .imagens ul li.last {
+margin-right:0px;
+	}
+
+.round {
+-moz-border-radius:12px 12px 12px 12px;
+-webkit-border-radius:12px 12px 12px 12px;
+    }
+
+.round2 {
+-moz-border-radius:0px 12px 12px 0px;
+-webkit-border-radius:0px 12px 12px 0px;
+	}
+	
+.hold-footer {
+	clear:both;
+	}
+
+.footer {
+padding:0 17px;
+text-align:left;
+width:945px;
+margin:0 auto;
+padding-top:20px;
+	}
+
+.footer .box-footer a.fale{
+display:block;
+height:20px;
+margin:13px 0 0;
+overflow:hidden;
+text-indent:-19999px;
+width:144px;
+	}
+
+.footer .box-footer a.mapa{
+display:block;
+height:20px;
+margin:15px 0 0;
+overflow:hidden;
+text-indent:-19999px;
+width:144px;
+	}
+
+.footer .box-footer {
+margin:0 0 0 222px;
+position:absolute;
+top:435px;
+width:464px;
+	}
+
+.footer .box-footer.internas {
+float:right;
+top:0px !important;
+_top:-30px;
+margin-bottom:20px;
+position:relative !important;
+	}
+	
+.left {
+float:left;
+	}
+
+.right {
+float:right !important;
+	}
+
+.center {
+text-align:center;
+   }
+
+.both {
+clear:both;
+	}
+
+.grid-205 {
+width:205px;
+	}
+
+.grid-205.right {
+background:#fff;
+padding:0 0 30px 0;
+	}
+
+.grid-464 {
+width:464px;
+
+	}
+
+.grid-242 {
+width:242px;
+_background:none;
+	}
+
+.grid-723 {
+width:723px;
+_background:none;
+	}
+
+.grid-516 {
+width:516px;
+	}
+
+div.hold-midia {
+width:400px;
+float:left;
+	}
+
+div.midia {
+width:242px;
+float:right;
+	}
+
+
+div.midia .imagens {
+border-top:1px solid #aeaeae;
+clear:both;
+margin-bottom:22px;
+_position:relative;
+_left:26px;
+	}
+
+div.midia .imagens ul {
+clear:both;
+_width:242px;
+_background:none;
+_position:relative;
+_left:-50px;
+	}
+
+div.midia .imagens ul li {
+float:right !important;
+margin-left:5px;
+margin-bottom:5px;
+	}
+
+div.midia .imagens ul li.last {
+margin-right:0px;
+	}
+div.midia h4 {
+background:#E7E7E7;
+color:#555555;
+float:left;
+font-size:125%;
+padding:0 5px 5px 0;
+position:relative;
+text-transform:uppercase;
+top:-10px;
+clear:both;
+margin-right:62px;
+	}
+.alignleft {
+float:left;
+margin-right:15px;
+margin-bottom:8px;
+	}
+
+.alignright{
+float:right;
+margin-left:15px;
+margin-bottom:8px;
+	}
+
+
+
+

@@ -1,0 +1,88 @@
+/*
+========  Projeto apresentado a disciplina de Tecnologia Web  ====== 
+Professor:orientador: Marcos Rodrigo Sol
+
+Nome do aplicativo: CADMEDUOS
+
+Objetivo: Criar um aplicativo Web para auxiliar as pessoas 
+de como se tornar um voluntário na doação de Medula óssea
+
+Copiright Mara de Carvalho Silvae Wellington de Sousa
+
+CSS Based on Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+
+*/
+h1{
+   font-size: 35pt;
+   width:100%;
+}
+
+h2{
+   font-size: 20pt;
+   width:100%;
+}
+
+.centro{
+   text-align:center;
+   font-size: 20pt;
+}
+
+
+a:link, a:visited{
+     color: #000000;
+     text-decoration: none;
+}
+a:hover, a:active{
+    color: #000000;
+    text-decoration: underline;
+}
+
+input_2 {
+  border: 1px solid;
+}
+
+img{
+   float:left;   
+   width: 30%;
+   left:30%
+   height: 60px;  
+   padding: 10px;
+   margin:30px;
+}
+
+#menu{
+  position:relative;
+  background-color::#EEB4B4;
+  color: black;
+  font-size: 25pt;
+  top: 100px;
+  height:0px;
+  left:100px;
+  width: 1024px;
+  margin:0px;
+  padding-top: 0px;
+  border-bottom: 1px  1px  1px  1px solid black;
+
+}
+.botao  {
+position:absolute;
+top:50px;
+left:10px;
+margin:200px;
+width: 1000px;
+
+background-color::#EEB4B4;
+
+}
+.format  {
+text-align:center;
+font-size: 10pt;
+top:0px;
+left:0px;
+margin:500px;
+width: 550px;
+}
+
+
