@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<!--
+			
+			========  Projeto apresentado a disciplina de Tecnologia Web  ====== 
+			Professor:orientador: Marcos Rodrigo Sol
+
+			Nome do aplicativo: CADMEDUOS
+
+			Objetivo: Criar um aplicativo Web para auxiliar as pessoas 
+			de como se tornar um voluntário na doação de Medula óssea
+
+			Mara de Carvalho Silva e Wellington de Sousa
+			
+					
+	-->
+	<head>
+	<title>CADMEDUOS</title>
+	<link href="commix.css" rel="stylesheet" type="text/css">
+	<link href="menu.css" rel="stylesheet" type="text/css">
+	<script src="swf.js" type="text/javascript"></script>
+	<script src="nuns.js" type="text/javascript"></script>
+	<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="jquery.validate.js"></script>
+	<link rel="stylesheet" type="text/css" href="wt-rotator.css"/>
+	<script type="text/javascript" src="jquery.easing.1.3.min.js"></script>
+	<script type="text/javascript" src="jquery.wt-rotator.min.js"></script>    
+	<script type="text/javascript" src="preview.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta name="description" content="CADMEDUOS - Cadastramento de Voluntários de Doação de Medula óssea"> 
+	<meta name="keywords" content="FAÇA PARTE DESSE TIME, SEJA UM VOLUNTÁRIO DE DOAÇÃO DE MEDULA ÓSSEA!!">
+
+ <!----------------------------------------------------------------------------------------------------------->
+
+	</head>
+	<body>
+	<div class="topo">
+		<div class="topo_tudo">
+			<div class="topo_esqd"><a href="Cidades.html"><img src="logo.png" border="0" /></a></div>
+			<div class="topo_dirt">&nbsp;</div>
+		</div>
+	</div>
+<!----------------------------------------------------------------------------------------------------------->
+	</script>
+	<div align="center">
+	<table width="1000" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+			<td height="38" width="81" bgcolor="#3D1314">&nbsp;</td>
+			<td>
+			<!--EXIBE OS MENUS DISPONIVEIS-->
+				 <div class="menu4">
+								<ul><li><a href="Inicio.html" class="link4">Inicio</a></li></ul>
+								<ul><li><a href="FaleConosco.html" class="link4">Fale Conosco</a></li></ul>
+								<ul><li><a href="QuemSomos.html" class="link4">Quem Somos</a></li></ul>
+								<ul><li><a href="SaibaMais.html" class="link4">Saiba Mais</a></li></ul>
+								<ul><li><a href="Cidades.html" class="link4">Mapa do Brasil</a></li></ul>
+				</div> 
+			</td>
+	  </tr>
+	</table>
+	</div><div class="corp">
+	<!-------------------------------------------------------------------------------------------------->	
+	<div class="corp_prin">
+	<img src="topo_prin.jpg" border="0" height="8"/><br>
+	<script language="javascript" type="text/javascript">
+         <!--Fução chamada para formatar e validar formulário-->
+		function ver_elog() {
+			$("#info").slideDown();
+		}
+		$(document).ready(function() {	
+
+			<!--valida campos vazios-->
+			jQuery.validator.addMethod("mail_fone", function(value, element) {
+
+				var m = $("#email").val().length;
+				var f = $("#fone").val().length;
+				
+				if ((m == 0)
+				 && (f == 0))
+					return false;
+				return true;
+			}, "Informe o seu e-mail ou seu telefone"); // Mensagem padrão
+			
+			jQuery.validator.addMethod("mail_fon2", function(value, element) {
+
+				var m = $("#email2").val().length;
+				var f = $("#fone2").val().length;
+				
+				if ((m == 0)
+				 && (f == 0))
+					return false;
+				return true;
+			}, "Informe o seu e-mail ou seu telefone"); // Mensagem padrão
+			
+			
+			$("#informacao").validate({
+				// Define as regras
+				rules:{
+					para:{
+						required: true
+					},
+					msg:{
+						required: true, minlength: 10
+					},
+					nome:{
+						required: true, minlength: 8
+					},
+					email:{
+						email: true
+					},
+					fone:{
+						minlength: 14
+					},
+					cidade:{
+						required: true
+					},
+					estado:{
+						required: true
+					}
+					
+					
+				},
+				// Define as mensagens de erro para cada regra
+				messages:{
+					para:{
+						required: "Selecione o Hemocentro"
+					},
+					msg:{
+						required: "Digite a sua mensagem",
+						minlength: "Sua mensagem deve conter, no minimo, 10 caracteres"
+					},
+					nome:{
+						required: "Digite o seu nome",
+						minlength: "O seu nome deve conter, no minimo, 8 caracteres"
+					},
+					email:{
+						email: "Informe um e-mail válido"
+					},
+					fone:{
+						minlength: "O seu telefone deve conter, no minimo, 14 caracteres"
+					},
+					cidade:{
+						required: "Digite a sua cidade"
+					},
+					estado:{
+						required: "Digite o seu estado"
+					},
+					
+					
+				},
+				submitHandler:function(form) {
+					// Colocamos os valores de cada campo em uma váriavel para facilitar a manipulação
+					var nome = $("#nome").val();
+					var email = $("#email").val();
+					var fone = $("#fone").val();
+					var cidd = $("#cidade").val();
+					var estd = $("#estado").val();
+					var para = $("#para").val();
+					var msgs = $("#msg").val();
+					var opcs = $("#opcs").val();
+					
+					// Exibe mensagem de carregamento
+					$("#situacao").html("Aguarde, enviando os dados...");
+					// Fazemos a requisão ajax com o arquivo envia.php e enviamos os valores de cada campo através do método POST
+					$.post('res_elog.php', {nome: nome, email: email, fone: fone, cidd: cidd, estd: estd, para: para, msgs: msgs, opcs: opcs }, function(resposta) {
+							// Quando terminada a requisição
+							// Exibe a div situacao
+							$("#situacao").slideDown();
+							// Se a resposta é um erro
+							if (resposta != false) {
+								// Exibe o erro na div
+								$("#situacao").html(resposta);
+							} 
+							// Se resposta for false, ou seja, não ocorreu nenhum erro
+							else {
+								// Exibe mensagem de sucesso
+								$("#btenviar").slideUp();
+								$("#info").slideUp();
+								$("#promocao").slideUp();
+								$("#textoini").slideUp();
+								$("#situacao").addClass("correto");
+								$("#situacao").html("<div align='center'><br><br>Sua mensagem foi enviada com sucesso.<br>Em breve entraremos em contato.</div><br><br><br>");
+							}
+					});
+				}
+			});			
+			
+		});
+	</script>
+
+	<!-------------------------------------MOSTRA FORMULÁRIO NA TELA E OS CAMPOS --------------------------------------------------------->
+	<div class="demo" align="left">
+
+	<div class="titl_prin">Fale Conosco</div>
+	<img src="blank.png" border="0" height="10"/><br>
+	<div id="textoini">
+
+	<div align="left" class="textoPadrao">Esta página esta reservada para você falar conosco sobre suas dúvidas, sugestões, críticas e também pedir informações. Selecione abaixo o tipo de contato necessário:</div>
+	<br><br>
+	<div class="fale"><a href="javascript:ver_elog()"><img src="gotapeq.gif" border="0"/>Clique aqui, para ter acesso ao formulário</a></div>
+	</div>
+
+	<!---chama a função para validar os campos---->
+	<div id="info" style="display: none">
+	<form id="promocao" action="javascript:func()" method="post">
+	 <div align="center">
+	  <table width="410" border="0" cellspacing="3" cellpadding="0" id="tabl">
+		<tr>
+		  <td colspan="2" class="texton"><label for="para">Estado:</label></td>
+		</tr>
+		<tr>
+		  <td colspan="2" valign="top">
+			<select name="para" id="para" class="caixa_nome">
+			  <option value="">Selecione o Estado</option>
+			  <option value="1">Acre</option>
+			  <option value="2">Alagoas</option>
+			  <option value="3">Amazonas</option>
+			  <option value="5">Bahia</option>
+			  <option value="6">Distrito Federal</option>
+			  <option value="7">Amapá</option>
+			  <option value="8">Ceará</option>
+			  <option value="9">Espirito Santo</option>
+			  <option value="10">Goiás</option>
+			  <option value="11">Maranhão</option>
+			  <option value="12">Mato Grosso</option>
+			  <option value="13">Mato Grosso do Sul</option>
+			  <option value="14">Minas Gerais</option>
+			  <option value="15">Pará</option>
+			  <option value="16">Paraiba</option>
+			  <option value="17">Paraná</option>
+			  <option value="18">Pernambuco</option>
+			  <option value="19">Piauí</option>
+			  <option value="20">Rio Grande do Norte</option>
+			  <option value="21">Rio Grande do Sul</option>
+			  <option value="22">Rio de Janeiro</option>
+			  <option value="23">Rondônia</option>
+			  <option value="24">Roraima</option>
+			  <option value="25">Santa Catarina</option>
+			  <option value="26">São Paulo</option>
+			  <option value="27">Sergipe</option>
+			  <option value="28">Tocantins</option>
+			 </select></td>
+		</tr>
+		<tr>
+		  <td class="texton"><label for="msg">Mensagem</label></td>
+		  <td>&nbsp;</td>
+		</tr>
+		<tr>
+		  <!-----mensagem---->
+		  <td valign="top" colspan="2">
+		  <textarea name="msg" id="msg" cols="45" rows="5" class="caixa_msg"></textarea></td>
+		</tr>
+		<tr>
+
+		  <!-----nome---->
+		  <td colspan="2" class="texton"><label for="nome">Nome</label></td>
+		</tr>
+		<tr>
+		  <td colspan="2" valign="top">
+		  <input type="text" name="nome" id="nome" class="caixa_nome"></td>
+		</tr>
+		<tr>
+
+		  <!-----e-mail---->
+		  <td width="50%" class="texton"><label for="email">E-mail</label></td>
+		  <td class="texton"><label for="fone">Telefone</label></td>
+
+		</tr>
+		<tr>
+
+		  <!-----e-mail e fone---->
+		  <td valign="top"><input type="text" name="email" id="email" class="caixa_mail"></td>
+		  <td valign="top"><input type="text" name="fone" id="fone" class="caixa_mail" onkeypress="mascaraFone(this);" ></td>
+		</tr>
+		<tr>
+		  <!-----cidade e uf---->
+		  <td class="texton"><label for="cidade">Cidade</label></td>
+		  <td class="texton"><label for="estado">UF</label></td>
+
+		</tr>
+		<tr>
+		  <td valign="top"><input type="text" name="cidade" id="cidade" class="caixa_mail"></td>
+		  <td valign="top"><input type="text" name="estado" id="estado" class="caixa_mail"></td>
+		</tr>
+		<tr>
+		 <br/>
+		<td colspan="2"><input class="bt_enviar" type=submit name=botao value="Enviar"></td>
+
+		</tr>
+	  </table>
+	 </div>
+	</form>
+	<div class="situacao" id="situacao" style="display:none">Enviando</div>
+	</div>
+	
+	<!------------------------------------------------------------------------------------------------>
+	
+	
+	</div><img src="rodp_prin.jpg" border="0" height="8"/>
+	  
+	</div>
+
+	<div class="corp_meio">&nbsp;</div>
+	<div class="corp_dirt">
+
+	
+	<!------------------------------------------FORMATA LADO DIREITO DA TELA ------------------------------------------>
+
+	<img src="blank.png" border="0" height="7"/><br>
+		<img src="topo_dirt.jpg" border="0" height="8"/><br>
+		<div class="demo2"><br>
+			<div class="text_pgra">VEJA OS ENDEREÇOS DE HEMOCENTROS EM TODO BRASIL</div>
+			<div id="relg_fln" class="horario">
+			<img src="blank.png" border="0" height="15" /><br/>
+			<div class="text_vgra">
+				<h2><img src="gotapeq.gif"><a href="Cidades.html" class="linkverm">Clique aqui e veja no Mapa</a></h2>
+			</div>
+			</div>
+			<div id="cheg_fln" class="direita">
+			<img src="gota.jpg" align="center" border="0" />
+			<img src="blank.png" border="0" height="15" /><br/>
+			<img src="blank.png" border="0" height="8" /><br/>
+			</div>
+			<input type="hidden" id="qual" value="0"></div>
+		<img src="rodp_dirt.jpg" border="0" height="8"/></br>
+	 
+		<div><img src="blank.png" width="375" height="8" /><br/></div>
+
+		<!------------------------------------------------------------------------------------------------------>
+	
+		<!--CLASSE PARA CONFIGURAR AS FOTOS--->
+	<div class="foto_dirt" align="center">
+		<div class="linearBg2">
+		<br/>
+			<a href="http://www.youtube.com/watch?v=3VFFhA6RMj4" class="linkbran">
+			Veja exemplos Reais de pessoas que passaram por transplante.</a>
+				<div class="text">Veja o processo que é realizado para retirada da medula.<br/>
+			Veja exemplo de doadores voluntários.</br>
+			Seja você também um voluntário de doação de Medula óssea!!<br/>
+			Escolha uma comunidade no facebook e participe!!<br/>
+			ESCOLHA UM LINK ABAIXO<br/><br/>
+			</div>			
+		<br/><br/>
+			<a href="http://entretenimento.r7.com/famosos-e-tv/noticias/transplante-de-medula-drica-moraes-e-bem-sucedido-20100707.html ">
+				<img src="CISSA.jpg" border="0" width="150" height="150"/>
+			</a>
+			<a href="http://www.youtube.com/watch?v=AplqMV0SPBs">
+				<img src="Reinaldo.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="http://www.youtube.com/watch?v=CkaDEI9yQZw&feature=related">
+				<img src="Cissa_G.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="http://www.youtube.com/watch?v=RHIYv9ZXlE8">
+				<img src="doe.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="http://www.youtube.com/watch?v=3VFFhA6RMj4">
+				<img src="compatibilidade.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="http://www.youtube.com/watch?v=9JMZ75GT0wM&feature=related">
+				<img src="processo.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="http://danieleaprendendoasealimentar.blogspot.com/">
+				<img src="AnaLuiza.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="http://www.inca.gov.br/conteudo_view.asp?ID=677/">
+				<img src="inca.gif" border="0" width="150" height="150" />
+			</a>
+			<a href="http://www.facebook.com/group.php?gid=146201692061443/">
+				<img src="facebook.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="	http://pt-br.facebook.com/notes/associa%C3%A7%C3%A3o-portuguesa-contra-a-leucemia/quem-se-pode-tornar-dador-de-medula-%C3%B3ssea-e-como-o-pode-fazer-crit%C3%A9rios-de-exclu/10150377583314697?ref=nf">
+				<img src="facebook2.jpg" border="0" width="150" height="150" />
+			</a>
+			
+			<img src="blank.png" width="375" height="8"  /><br>
+			<div class="text_bran" align="left" style="margin-left: 15px;">
+				<div class="linh_dirt">&nbsp;</div> 
+			</div>
+		</div>
+	</div>	
+	</div>
+	</div>
+	<!-------------------------------------------RODAPÉ------------------------------------------------------>	
+	<div class="rodp">
+		<div class="rodp_intr">
+		
+			<div class="head_rodp">
+				<div class="titl_rodp">CADMEDUOS</div>
+				<div class="text_rodp"><a href="http://www.pucminas.br/destaques/" class="linkrodp">PucMinas</a></div>
+			</div>
+		
+			<div class="cabc_rodp">
+				<div class="titl_rodp">Medula Ossea</div>
+				<div class="text_rodp"><a href="SaibaMais.html#medula" class="linkrodp">O que é?</a></div>
+				<div class="text_rodp"><a href="SaibaMais.html#tipos" class="linkrodp">Tipos</a></div>
+				<div class="text_rodp"><a href="http://www.ameo.org.br/interna2.php?id=5" class="linkrodp">Leia mais - AME</a></div>
+				<div class="text_rodp"><a href="http://www2.inca.gov.br/wps/wcm/connect/inca/portal/home" class="linkrodp">Leia mais - INCA</a></div>
+			</div>		
+		<!------------------------------------------------------------------------------------------------------>	
+			<div class="gota_rodp">
+			<img src="gota.png" border="0" alt="gota" />
+			</div>		
+			<div class="head_rodp">			
+			</div>		
+			<div class="cabc_rodp">				
+			</div>
+		</div>		
+		<div class="rodp_baix">
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			<div class="text_cred">	PUC 2011 © Todos os direitos reservados<br/>
+			<a href="http://www.pucminas.br/destaques/" target="_blank" class="linkrodp">
+			PROJETO CADMEDUOS -  Desenvolvimento Web </a>
+			</div>
+		</div>
+  </div>
+</body>
+</html>
+
