@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321848914.21875:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%7bd4e0cfb509f200176013b6d60eff05I"logical_path;
+FI"rodp_dirt.jpg;
+TI"pathname;
+FI"*$root/app/assets/images/rodp_dirt.jpg;
+TI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2011-11-06T23:31:12-02:00;
+FI"length;
+FI"501;
+FI"digest;
+F"%72abb8816d4564b34c798d1308ca26b7I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321965024.6875:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%bdde784ee021acc2d669b07be7ae5e3fI"logical_path;
+FI"bt_enviar.jpg;
+TI"pathname;
+FI"*$root/app/assets/images/bt_enviar.jpg;
+TI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2011-11-08T22:00:08-02:00;
+FI"length;
+FI"	1499;
+FI"digest;
+F"%4d039e08b5773847cb0f53cc44d1a06aI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

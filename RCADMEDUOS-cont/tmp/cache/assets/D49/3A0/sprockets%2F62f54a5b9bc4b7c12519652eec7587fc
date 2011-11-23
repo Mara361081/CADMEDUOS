@@ -1,0 +1,18 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321966525.015625:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%7d92454a23b5d35af01bd85881f4744bI"logical_path;
+FI"Coracao.jpg;
+TI"pathname;
+FI"($root/app/assets/images/Coracao.jpg;
+TI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2011-11-15T13:13:43-02:00;
+FI"length;
+FI"
+16047;
+FI"digest;
+F"%5b333d137746d5123fe335d4376a5fffI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

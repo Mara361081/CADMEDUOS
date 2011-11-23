@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321848913.984375:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%2e340c8283fdad2f03342adf3637a8cdI"logical_path;
+FI"rodp_prin.jpg;
+TI"pathname;
+FI"*$root/app/assets/images/rodp_prin.jpg;
+TI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2011-11-06T23:25:54-02:00;
+FI"length;
+FI"511;
+FI"digest;
+F"%36d95092e1acac8fc735e99d83f3f7c8I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

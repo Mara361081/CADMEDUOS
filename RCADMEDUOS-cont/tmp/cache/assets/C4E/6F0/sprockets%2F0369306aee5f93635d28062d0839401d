@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321849348.625:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%732b4bd9f3b6baffe4f016a4ab7f4f09I"logical_path;
+FI"Compatibilidade.jpg;
+TI"pathname;
+FI"0$root/app/assets/images/Compatibilidade.jpg;
+TI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2011-11-15T16:36:17-02:00;
+FI"length;
+FI"	6670;
+FI"digest;
+F"%ec19995a284e63b0a3dc68551535583eI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

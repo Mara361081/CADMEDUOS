@@ -1,0 +1,18 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321848914.59375:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%c311882dff555a13c417330c6d9a1d24I"logical_path;
+FI"processo.jpg;
+TI"pathname;
+FI")$root/app/assets/images/processo.jpg;
+TI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2011-11-15T17:06:52-02:00;
+FI"length;
+FI"
+14731;
+FI"digest;
+F"%6735d25ee77682a6256a8f133837bfffI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

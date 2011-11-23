@@ -1,0 +1,18 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321848914.390625:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%7b861d875106e312df65759917ceff04I"logical_path;
+FI"Reinaldo.jpg;
+TI"pathname;
+FI")$root/app/assets/images/Reinaldo.jpg;
+TI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2011-11-15T13:44:21-02:00;
+FI"length;
+FI"
+47078;
+FI"digest;
+F"%b96f66f5cc8af28e9cd88475dfc83d02I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

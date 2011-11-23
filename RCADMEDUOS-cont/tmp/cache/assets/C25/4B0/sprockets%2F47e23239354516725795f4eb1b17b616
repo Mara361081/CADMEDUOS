@@ -1,0 +1,18 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321965341.46875:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%2a3f68313ad58458998223cefd015c71I"logical_path;
+FI"gota.png;
+TI"pathname;
+FI"%$root/app/assets/images/gota.png;
+TI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2011-11-06T23:28:26-02:00;
+FI"length;
+FI"
+11171;
+FI"digest;
+F"%bbfa2d22717d5d54501524136fd5db9cI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

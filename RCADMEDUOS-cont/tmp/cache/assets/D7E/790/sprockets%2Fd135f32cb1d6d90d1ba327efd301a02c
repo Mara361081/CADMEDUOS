@@ -1,0 +1,552 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321847574.234375:@value{	I"length:EFiw0I"digest;
+F"%2b80a6eb38ea2ea1f4ac4e8168ee53d2I"source;
+FI"w0/* line 1, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+body {
+  background-color: #3D1314;
+  margin: 0px;
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 12px;
+  color: #333333;
+}
+
+/* line 9, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+div.demo {
+  /*  display: table; */
+  width: 588px;
+  padding: 0px 10px 10px 10px;
+  margin: 0px;
+  background: #FFFFFF;
+}
+
+/*
+html>body div.demo {
+  width: 588px;
+} 
+*/
+/* line 22, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+div.demo2 {
+  float: left;
+  width: 345px;
+  height: 190px;
+  padding: 0px 15px 0px 15px;
+  margin: 0px 0px 0px 0px;
+  background: #FFFFFF;
+}
+
+/* line 31, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+div.demo3 {
+  float: left;
+  width: 345px;
+  padding: 10px 15px 10px 15px;
+  margin: 0px 0px 0px 0px;
+  background: #FFFFFF;
+}
+
+/* line 39, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.topo {
+  background-image: url("fund_topo.jpg");
+  height: 134px;
+  width: 100%;
+}
+
+/* line 45, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.topo_tudo {
+  display: table;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 51, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.topo_esqd {
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+  width: 158px;
+}
+
+/* line 58, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.topo_dirt {
+  float: left;
+  width: 832px;
+}
+
+/* line 63, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.topo {
+  background-image: url("fund_topo.jpg");
+  height: 134px;
+  margin: 0;
+}
+
+/* line 69, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.rodp {
+  background-image: url("bg_rodp.jpg");
+  background-repeat: repeat-x;
+  height: 264px;
+}
+
+/* line 75, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.rodp_intr {
+  margin-top: 10px;
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 200px;
+}
+
+/* line 83, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.rodp_baix {
+  margin-top: 10px;
+  width: 990px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* line 92, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.corp {
+  width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
+}
+
+/* line 99, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.corp_prin {
+  padding-top: 7px;
+  float: left;
+  width: 608px;
+}
+
+/* line 105, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.corp_meio {
+  width: 17px;
+  float: left;
+}
+
+/* line 110, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.corp_dirt {
+  /*  margin-left: 625px; */
+  width: 375px;
+  float: left;
+}
+
+/* line 116, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+div.horario {
+  float: left;
+  width: 220px;
+}
+
+/* line 121, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+div.direita {
+  float: left;
+  width: 125px;
+}
+
+/* line 126, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+div.menu_esqd {
+  width: 240px;
+  float: left;
+}
+
+/* line 131, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.head_rodp {
+  width: 146px;
+  float: left;
+  padding-top: 13px;
+  padding-left: 10px;
+  text-align: left;
+}
+
+/* line 139, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.cabc_rodp {
+  width: 101px;
+  float: left;
+  padding-top: 13px;
+  padding-left: 10px;
+  text-align: left;
+}
+
+/* line 148, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.gota_rodp {
+  width: 150px;
+  float: left;
+  padding-top: 10px;
+}
+
+/* line 154, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.foto_dirt {
+  width: 93px;
+  float: left;
+}
+
+/* line 159, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.linh_prin {
+  margin-top: 15px;
+  border-top: 1px dotted #999;
+  width: 100%;
+}
+
+/* line 165, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.linh_dirt {
+  margin-left: 15px;
+  margin-right: 15px;
+  border-top: 1px dotted #666;
+  width: 345px;
+}
+
+/* line 172, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.logo_fahc {
+  margin-right: 20px;
+  width: 68px;
+  float: left;
+}
+
+/* line 178, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.logo_sant {
+  margin-right: 20px;
+  width: 77px;
+  float: left;
+}
+
+/* line 184, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.logo_suss {
+  width: 93px;
+  float: left;
+}
+
+/* line 189, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.fale {
+  padding-left: 150px;
+  margin-bottom: 20px;
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 12px;
+  color: #333333;
+  font-weight: bold;
+}
+
+/* line 198, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.linearBg2 {
+  width: 375px;
+  height: 520px;
+  background-color: #1a82f7;
+  background: -moz-linear-gradient(100% 100% 90deg, #3d1314, #901212);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#901212), to(#3d1314));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#901212', endColorstr='#3d1314');
+}
+
+/* line 207, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.titl_prin {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 16px;
+  color: #3C1213;
+  border-top: 5px solid #3C1213;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+/* line 216, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.titl_prin_2 {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 25px;
+  color: #3C1213;
+  border-top: 5px solid #3C1213;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+/* line 225, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.titAzul {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 14px;
+  color: #3C1213;
+  font-weight: bold;
+}
+
+/* line 232, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.titl_rodp {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 16px;
+  color: #646464;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* line 240, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.text_rodp {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 12px;
+  color: #8e8d8d;
+  margin-bottom: 5px;
+}
+
+/* line 247, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.text_cred {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 11px;
+  color: #8e8d8d;
+}
+
+/* line 253, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.textoPadrao {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 12px;
+  color: #333333;
+  text-align: justify;
+}
+
+/* line 259, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.text {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* line 266, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.texton, .subtit {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 12px;
+  color: #333333;
+  font-weight: bold;
+  text-align: justify;
+}
+
+/* line 273, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.texton_2, .subtit {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 15px;
+  color: #333333;
+  font-weight: bold;
+}
+
+/* line 279, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.text_pret {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 12px;
+  color: #000;
+}
+
+/* line 284, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.text_bran {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 12px;
+  color: #FFF;
+}
+
+/* line 289, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.text_pgra {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 20px;
+  color: #000;
+}
+
+/* line 295, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.text_verm {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 12px;
+  color: #3b1112;
+}
+
+/* line 301, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.text_vgra {
+  font-family: Arial, Geneva, sans-serif;
+  font-size: 18px;
+  color: #3b1112;
+}
+
+/* line 307, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+table.bord_tabl {
+  border: 1px solid #666;
+  text-align: center;
+}
+
+/* line 312, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+table.bord_tabl tr {
+  height: 20px;
+}
+
+/* line 316, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+table.bord_tabl td {
+  border: 1px solid #666;
+  text-align: center;
+}
+
+/* line 321, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.caixa_nome {
+  color: #000000;
+  font-family: Arial;
+  font-size: 11px;
+  height: 19px;
+  width: 410px;
+  background-color: #EFEFEF;
+  border-style: solid;
+  border-color: #666;
+  border-width: 1px;
+}
+
+/* line 332, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.caixa_msg {
+  color: #000000;
+  font-family: Arial;
+  font-size: 11px;
+  height: 83px;
+  width: 410px;
+  background-color: #EFEFEF;
+  border-style: solid;
+  border-color: #666;
+  border-width: 1px;
+}
+
+/* line 343, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.caixa_mail {
+  color: #000000;
+  font-family: Arial;
+  font-size: 11px;
+  height: 19px;
+  width: 202px;
+  background-color: #EFEFEF;
+  border-style: solid;
+  border-color: #666;
+  border-width: 1px;
+}
+
+/* line 356, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.bt.enviar a,
+.bt.enviar input {
+  width: 73px;
+  height: 23px;
+  background: url("bt_enviar.jpg") no-repeat;
+  float: left;
+}
+
+/* line 364, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.bt a,
+.bt input {
+  display: block;
+  border: none;
+  font-size: 0em;
+  text-indent: -1000px;
+  cursor: pointer;
+}
+
+/* line 371, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.situacao {
+  margin-top: 3px;
+  color: #901212;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 378, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.correto {
+  margin-left: 10px;
+  margin-top: 3px;
+  color: #3D1314;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  float: center;
+}
+
+/* line 387, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+#tabl td, #tab2 td {
+  text-align: left;
+}
+
+/* line 391, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+h1 {
+  text-align: justify;
+}
+
+/* line 395, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+label.error {
+  float: none;
+  color: #901212;
+  margin: 0px;
+  vertical-align: top;
+  font-family: Arial, Verdana,  Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: none;
+  margin-left: 1px;
+  padding-left: 16px;
+  background: url("unchecked.gif") no-repeat 0px 0px;
+}
+
+/* line 408, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+A:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* line 409, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+A:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* line 410, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+A:hover {
+  color: #3b1112;
+  text-decoration: none;
+}
+
+/* line 412, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.linkverm:link {
+  color: #3b1112;
+  text-decoration: none;
+}
+
+/* line 413, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.linkverm:visited {
+  color: #3b1112;
+  text-decoration: none;
+}
+
+/* line 414, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.linkverm:hover {
+  color: #666666;
+  text-decoration: none;
+}
+
+/* line 416, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.linkrodp:link {
+  color: #8e8d8d;
+  text-decoration: none;
+}
+
+/* line 417, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.linkrodp:visited {
+  color: #8e8d8d;
+  text-decoration: none;
+}
+
+/* line 418, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.linkrodp:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 420, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.linkbran:link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* line 421, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.linkbran:visited {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* line 422, C:/Sites/RCADMEDUOS/app/assets/stylesheets/commix.css.scss */
+.linkbran:hover {
+  color: #999;
+  text-decoration: none;
+}
+;
+FI"_version;
+F"%5a980347b3fb8e80ca867fe908529227

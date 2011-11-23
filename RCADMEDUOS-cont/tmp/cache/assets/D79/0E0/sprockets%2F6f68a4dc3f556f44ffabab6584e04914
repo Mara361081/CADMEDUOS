@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321848914.1875:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%45983a24716bb51098054e7c22bba689I"logical_path;
+FI"gotapeq.gif;
+TI"pathname;
+FI"($root/app/assets/images/gotapeq.gif;
+TI"content_type;
+FI"image/gif;
+FI"
+mtime;
+FI"2011-11-06T23:26:56-02:00;
+FI"length;
+FI"831;
+FI"digest;
+F"%3a9d5e4ffd192629c003f0613c5652b7I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

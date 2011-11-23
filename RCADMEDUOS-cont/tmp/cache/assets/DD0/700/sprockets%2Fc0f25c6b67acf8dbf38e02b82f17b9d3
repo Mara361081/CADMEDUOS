@@ -1,0 +1,18 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321853964.375:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%fe3038e8c53754352d94f7ee03ae07bbI"logical_path;
+FI"Medula.jpg;
+TI"pathname;
+FI"'$root/app/assets/images/Medula.jpg;
+TI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2011-11-06T20:10:24-02:00;
+FI"length;
+FI"
+56273;
+FI"digest;
+F"%5e0f66ca0309076f5bcd539e78bd2189I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

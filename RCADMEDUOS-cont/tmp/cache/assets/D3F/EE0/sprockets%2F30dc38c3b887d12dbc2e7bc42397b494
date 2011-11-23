@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321848914.703125:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%c595e449fc438df6e8302d19d20f116fI"logical_path;
+FI"inca.gif;
+TI"pathname;
+FI"%$root/app/assets/images/inca.gif;
+TI"content_type;
+FI"image/gif;
+FI"
+mtime;
+FI"2011-11-15T18:09:54-02:00;
+FI"length;
+FI"	2441;
+FI"digest;
+F"%7ed6e3a79cbd6193b69e9753ec00fb96I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

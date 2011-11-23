@@ -1,0 +1,18 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321848914.296875:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%222bb6d12338fbe82cb74242fe4394e6I"logical_path;
+FI"CISSA.jpg;
+TI"pathname;
+FI"&$root/app/assets/images/CISSA.jpg;
+TI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2011-11-15T13:39:48-02:00;
+FI"length;
+FI"
+52827;
+FI"digest;
+F"%703200351d793e228872b4827d1ed208I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

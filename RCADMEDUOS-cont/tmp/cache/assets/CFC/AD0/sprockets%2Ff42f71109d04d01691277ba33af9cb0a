@@ -1,0 +1,18 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1321966584.4375:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%aab03a47a68d90f39ef2677c8c434154I"logical_path;
+FI"mapa.jpg;
+TI"pathname;
+FI"%$root/app/assets/images/mapa.jpg;
+TI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2011-11-10T14:00:44-02:00;
+FI"length;
+FI"
+47984;
+FI"digest;
+F"%8aa9721df56ebf18bc2a79672a8e2f67I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5
