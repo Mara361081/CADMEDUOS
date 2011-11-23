@@ -1,0 +1,644 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<!--
+			
+			========  Projeto apresentado a disciplina de Tecnologia Web  ====== 
+			Professor:orientador: Marcos Rodrigo Sol
+
+			Nome do aplicativo: CADMEDUOS
+
+			Objetivo: Criar um aplicativo Web para auxiliar as pessoas 
+			de como se tornar um voluntário na doação de Medula óssea
+
+			Mara de Carvalho Silva e Wellington de Sousa
+			
+					
+	-->
+	<head>
+	<title>CADMEDUOS</title>
+	<link href="commix.css" rel="stylesheet" type="text/css">
+	<link href="menu.css" rel="stylesheet" type="text/css">
+	<script src="swf.js" type="text/javascript"></script>
+	<script src="nuns.js" type="text/javascript"></script>
+	<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="jquery.validate.js"></script>
+	<link rel="stylesheet" type="text/css" href="wt-rotator.css"/>
+	<script type="text/javascript" src="jquery.easing.1.3.min.js"></script>
+	<script type="text/javascript" src="jquery.wt-rotator.min.js"></script>    
+	<script type="text/javascript" src="preview.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta name="description" content="CADMEDUOS - Cadastramento de Voluntários de Doação de Medula óssea"> 
+	<meta name="keywords" content="FAÇA PARTE DESSE TIME, SEJA UM VOLUNTÁRIO DE DOAÇÃO DE MEDULA ÓSSEA!!">
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-9411055-3']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	</head>
+	<body>
+	<div class="topo">
+		<div class="topo_tudo">
+			<div class="topo_esqd"><a href="Cidades.html"><img src="/assets/logo.png" border="0" /></a></div>
+			<div class="topo_dirt">&nbsp;</div>
+		</div>
+	</div>
+	<script language="javascript" type="text/javascript">
+		$(function(){
+		
+			$("ul.dropdown li").hover(function(){
+			
+				$(this).addClass("hover");
+				$('ul:first',this).css('visibility', 'visible');
+			
+			}, function(){
+			
+				$(this).removeClass("hover");
+				$('ul:first',this).css('visibility', 'hidden');
+			
+			});
+			
+			$("ul.dropdown li ul li:has(ul)").find("a:first").append(" &raquo; ");
+		
+		});
+	</script>
+	<div align="center">
+	<table width="1000" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+			<td height="38" width="81" bgcolor="#3D1314">&nbsp;</td>
+			<td>
+			<!--EXIBE OS MENUS DISPONIVEIS-->
+				 <div class="menu4">
+								<ul><li><a href="Inicio.html" class="link4">Inicio</a></li></ul>
+								<ul><li><a href="FaleConosco.html" class="link4">Fale Conosco</a></li></ul>
+								<ul><li><a href="QuemSomos.html" class="link4">Quem Somos</a></li></ul>
+								<ul><li><a href="SaibaMais.html" class="link4">Saiba Mais</a></li></ul>
+								<ul><li><a href="Cidades.html" class="link4">Mapa do Brasil</a></li></ul>
+				</div> 
+			</td>
+	  </tr>
+	</table>
+	</div><div class="corp">
+
+
+
+	<div class="corp_prin">
+	<img src="http://www.hemosc.org.br/imagens/topo_prin.jpg" border="0" height="8"/><br>
+	<script language="javascript" type="text/javascript">
+		function ver_info() {
+			$("#elog").slideUp();
+			$("#info").slideDown();
+		}
+		function ver_elog() {
+			$("#info").slideUp();
+			$("#elog").slideDown();
+		}
+		$(document).ready(function() {	
+			
+			jQuery.validator.addMethod("mail_fone", function(value, element) {
+
+				var m = $("#email").val().length;
+				var f = $("#fone").val().length;
+				
+				if ((m == 0)
+				 && (f == 0))
+					return false;
+				return true;
+			}, "Informe o seu e-mail ou seu telefone"); // Mensagem padrão
+			
+			jQuery.validator.addMethod("mail_fon2", function(value, element) {
+
+				var m = $("#email2").val().length;
+				var f = $("#fone2").val().length;
+				
+				if ((m == 0)
+				 && (f == 0))
+					return false;
+				return true;
+			}, "Informe o seu e-mail ou seu telefone"); // Mensagem padrão
+			
+			
+			$("#promocao").validate({
+				// Define as regras
+				rules:{
+					para:{
+						required: true
+					},
+					msg:{
+						required: true, minlength: 10
+					},
+					nome:{
+						required: true, minlength: 8
+					},
+					email:{
+						email: true
+					},
+					fone:{
+						minlength: 14
+					},
+					cidade:{
+						required: true
+					},
+					estado:{
+						required: true
+					}
+					
+					
+				},
+				// Define as mensagens de erro para cada regra
+				messages:{
+					para:{
+						required: "Selecione o Hemocentro"
+					},
+					msg:{
+						required: "Digite a sua mensagem",
+						minlength: "Sua mensagem deve conter, no minimo, 10 caracteres"
+					},
+					nome:{
+						required: "Digite o seu nome",
+						minlength: "O seu nome deve conter, no minimo, 8 caracteres"
+					},
+					email:{
+						email: "Informe um e-mail válido"
+					},
+					fone:{
+						minlength: "O seu telefone deve conter, no minimo, 14 caracteres"
+					},
+					cidade:{
+						required: "Digite a sua cidade"
+					},
+					estado:{
+						required: "Digite o seu estado"
+					},
+					
+					
+				},
+				submitHandler:function(form) {
+					// Colocamos os valores de cada campo em uma váriavel para facilitar a manipulação
+					var nome = $("#nome").val();
+					var email = $("#email").val();
+					var fone = $("#fone").val();
+					var cidd = $("#cidade").val();
+					var estd = $("#estado").val();
+					var para = $("#para").val();
+					var msgs = $("#msg").val();
+					var opcs = $("#opcs").val();
+					
+					// Exibe mensagem de carregamento
+					$("#situacao").html("Aguarde, enviando os dados...");
+					// Fazemos a requisão ajax com o arquivo envia.php e enviamos os valores de cada campo através do método POST
+					$.post('res_elog.php', {nome: nome, email: email, fone: fone, cidd: cidd, estd: estd, para: para, msgs: msgs, opcs: opcs }, function(resposta) {
+							// Quando terminada a requisição
+							// Exibe a div situacao
+							$("#situacao").slideDown();
+							// Se a resposta é um erro
+							if (resposta != false) {
+								// Exibe o erro na div
+								$("#situacao").html(resposta);
+							} 
+							// Se resposta for false, ou seja, não ocorreu nenhum erro
+							else {
+								// Exibe mensagem de sucesso
+								$("#btenviar").slideUp();
+								$("#info").slideUp();
+								$("#promocao").slideUp();
+								$("#textoini").slideUp();
+								$("#situacao").addClass("correto");
+								$("#situacao").html("<div align='center'><br><br>Sua mensagem foi enviada com sucesso.<br>Em breve entraremos em contato.</div><br><br><br>");
+							}
+					});
+				}
+			});
+			
+			
+			$("#informacao").validate({
+				// Define as regras
+				rules:{
+					para2:{
+						required: true
+					},
+					assu2:{
+						required: true
+					},
+					msg2:{
+						required: true, minlength: 10
+					},
+					nome2:{
+						required: true, minlength: 8
+					},
+					email2:{
+						email: true, mail_fon2: true
+					},
+					fone2:{
+						minlength: 14
+					},
+					cidade2:{
+						required: true
+					},
+					estado2:{
+						required: true
+					}
+					
+					
+				},
+				// Define as mensagens de erro para cada regra
+				messages:{
+					para2:{
+						required: "Selecione o Hemocentro"
+					},
+					assu2:{
+						required: "Selecione o assunto"
+					},
+					msg2:{
+						required: "Digite a sua mensagem",
+						minlength: "Sua mensagem deve conter, no minimo, 10 caracteres"
+					},
+					nome2:{
+						required: "Digite o seu nome",
+						minlength: "O seu nome deve conter, no minimo, 8 caracteres"
+					},
+					email2:{
+						mail_fone: "Informe o seu e-mail ou seu telefone",
+						email: "Informe um e-mail válido"
+					},
+					fone2:{
+						minlength: "O seu telefone deve conter, no minimo, 14 caracteres"
+					},
+					cidade2:{
+						required: "Digite a sua cidade"
+					},
+					estado2:{
+						required: "Digite o seu estado"
+					},
+					
+					
+				},
+				submitHandler:function(form) {
+					// Colocamos os valores de cada campo em uma váriavel para facilitar a manipulação
+					var nome = $("#nome2").val();
+					var email = $("#email2").val();
+					var fone = $("#fone2").val();
+					var cidd = $("#cidade2").val();
+					var estd = $("#estado2").val();
+					var para = $("#para2").val();
+					var assu = $("#assu2").val();
+					var msgs = $("#msg2").val();
+					var opcs = $("#opcs2").val();
+					
+					// Exibe mensagem de carregamento
+					$("#situacao2").html("Aguarde, enviando os dados...");
+					// Fazemos a requisão ajax com o arquivo envia.php e enviamos os valores de cada campo através do método POST
+					$.post('res_info.php', {nome: nome, email: email, fone: fone, cidd: cidd, estd: estd, para: para, msgs: msgs, opcs: opcs, assu: assu }, function(resposta) {
+							// Quando terminada a requisição
+							// Exibe a div situacao
+							$("#situacao2").slideDown();
+							// Se a resposta é um erro
+							if (resposta != false) {
+								// Exibe o erro na div
+								$("#situacao2").html(resposta);
+							} 
+							// Se resposta for false, ou seja, não ocorreu nenhum erro
+							else {
+								// Exibe mensagem de sucesso
+								$("#btenviar2").slideUp();
+								$("#elog").slideUp();
+								$("#informacao").slideUp();
+								$("#textoini").slideUp();
+								$("#situacao2").addClass("correto");
+								$("#situacao2").html("<div align='center'><br><br>Sua mensagem foi enviada com sucesso.<br>Em breve entraremos em contato.</div><br><br><br>");
+							}
+					});
+				}
+			});
+		});
+	</script>
+	<div class="demo" align="left">
+	<div class="titl_prin">Fale Conosco</div>
+	<img src="http://www.hemosc.org.br/imagens/blank.png" border="0" height="10"/><br>
+	<div id="textoini">
+	<div align="left" class="textoPadrao">Esta página esta reservada para você falar conosco sobre suas dúvidas, sugestões, críticas e também pedir informações. Selecione abaixo o tipo de contato necessário:</div>
+	<br><br>
+
+	<div class="fale"><a href="javascript:ver_elog()"><img src="/assets/gotapeq.gif" border="0"/> Elogiar, sugerir ou apontar falhas</a></div>
+	<div class="fale"><a href="javascript:ver_info()"><img src="/assets/gotapeq.gif" border="0"/> Obter informações</a></div>
+	</div>
+	<div id="elog" style="display: none">
+	<form id="promocao" action="javascript:func()" method="post">
+	 <div align="center">
+	  <table width="410" border="0" cellspacing="3" cellpadding="0" id="tabl">
+		<tr>
+		  <td colspan="2" class="texton"><label for="para">Para</label></td>
+
+		</tr>
+		<tr>
+		  <td colspan="2" valign="top">
+			<select name="para" id="para" class="caixa_nome">
+			  <option value="">Selecione o Hemocentro</option>
+			  <option value="1">Hemosc - Florian&oacute;polis</option>
+			</select></td>
+		</tr>
+		<tr>
+		  <td class="texton"><label for="msg">Mensagem</label></td>
+
+		  <td>&nbsp;</td>
+		</tr>
+		<tr>
+		  <td valign="top" colspan="2">
+		  <textarea name="msg" id="msg" cols="45" rows="5" class="caixa_msg"></textarea></td>
+		</tr>
+		<tr>
+		  <td colspan="2" class="texton"><label for="nome">Nome</label></td>
+
+		</tr>
+		<tr>
+		  <td colspan="2" valign="top">
+		  <input type="text" name="nome" id="nome" class="caixa_nome"></td>
+		</tr>
+		<tr>
+		  <td width="50%" class="texton"><label for="email">E-mail</label></td>
+		  <td class="texton"><label for="fone">Telefone</label></td>
+
+		</tr>
+		<tr>
+		  <td valign="top"><input type="text" name="email" id="email" class="caixa_mail"></td>
+		  <td valign="top"><input type="text" name="fone" id="fone" class="caixa_mail" onkeypress="mascaraFone(this);" ></td>
+		</tr>
+		<tr>
+		  <td class="texton"><label for="cidade">Cidade</label></td>
+		  <td class="texton"><label for="estado">UF</label></td>
+
+		</tr>
+		<tr>
+		  <td valign="top"><input type="text" name="cidade" id="cidade" class="caixa_mail"></td>
+		  <td valign="top"><input type="text" name="estado" id="estado" class="caixa_mail"></td>
+		</tr>
+		<tr>
+		  <td colspan="2"><p id="btenviar" class="bt enviar"><input type="submit" value="" title="" />
+		  <input type="hidden" id="opcs" name="opcs" value="elog"></p></td>
+		</tr>
+
+	  </table>
+	 </div>
+	</form>
+	<div class="situacao" id="situacao" style="display:none">Enviando</div>
+	</div>
+
+	<div id="info" style="display: none">
+	<form id="informacao" action="javascript:func()" method="post">
+	 <div align="center">
+	  <table width="410" border="0" cellspacing="3" cellpadding="0"id="tab2">
+		<tr>
+
+		  <td colspan="2" class="texton"><label for="para2">Para</label></td>
+		</tr>
+		<tr>
+		  <td colspan="2" valign="top">
+			<select name="para2" id="para2" class="caixa_nome">
+			  <option value="">Selecione o Hemocentro</option>
+			  <option value="1">Hemosc - Florian&oacute;polis</option>
+
+			  <option value="10">Hemocentro Regional de Blumenau</option>
+			 </select></td>
+		</tr>
+		<tr>
+
+		  <td colspan="2" class="texton"><label for="assu2">Assunto</label></td>
+		</tr>
+		<tr>
+		  <td colspan="2" valign="top">
+			<select name="assu2" id="assu2" class="caixa_nome">
+			  <option value="">Selecione o assunto</option>
+			  <option value="3">doação de medula óssea</option>
+			  <option value="9">doação de cordão umbilical</option>
+			  </select></td>
+		</tr>
+		<tr>
+		  <td class="texton"><label for="msg2">Mensagem</label></td>
+		  <td>&nbsp;</td>
+
+		</tr>
+		<tr>
+		  <td valign="top" colspan="2">
+		  <textarea name="msg2" id="msg2" cols="45" rows="5" class="caixa_msg"></textarea></td>
+		</tr>
+		<tr>
+		  <td colspan="2" class="texton"><label for="nome2">Nome</label></td>
+		</tr>
+
+		<tr>
+		  <td colspan="2" valign="top">
+		  <input type="text" name="nome2" id="nome2" class="caixa_nome"></td>
+		</tr>
+		<tr>
+		  <td width="50%" class="texton"><label for="email2">E-mail</label></td>
+		  <td class="texton"><label for="fone2">Telefone</label></td>
+		</tr>
+
+		<tr>
+		  <td valign="top"><input type="text" name="email2" id="email2" class="caixa_mail"></td>
+		  <td valign="top"><input type="text" name="fone2" id="fone2" class="caixa_mail" onkeypress="mascaraFone(this);" ></td>
+		</tr>
+		<tr>
+		  <td class="texton"><label for="cidade2">Cidade</label></td>
+		  <td class="texton"><label for="estado2">UF</label></td>
+		</tr>
+
+		<tr>
+		  <td valign="top"><input type="text" name="cidade2" id="cidade2" class="caixa_mail"></td>
+		  <td valign="top"><input type="text" name="estado2" id="estado2" class="caixa_mail"></td>
+		</tr>
+		<tr>
+		  <td colspan="2"><p id="btenviar2" class="bt enviar"><input type="submit" value="" title="" />
+		  <input type="hidden" id="opcs2" name="opcs2" value="info"></p></td>
+		</tr>
+	  </table>
+
+	 </div>
+	</form>
+	<div class="situacao" id="situacao2" style="display:none">Enviando</div>
+	</div>
+
+
+
+	</div><img src="http://www.hemosc.org.br/imagens/rodp_prin.jpg" border="0" height="8"/>
+	  
+	</div>
+
+	<div class="corp_meio">&nbsp;</div>
+	<div class="corp_dirt">
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {	
+			
+			function sleep(milliseconds) {
+				var start = new Date().getTime();
+				for (var i = 0; i < 1e7; i++) {
+					if ((new Date().getTime() - start) > milliseconds){
+						break;
+					}
+				}
+			}
+			
+			sliderIntervalID = setInterval(function(){
+				var locl = new Array();
+				var mapa = new Array();
+				locl[1]  = "#relg_fln";      
+				locl[2]  = "#relg_cua";
+				locl[3]  = "#relg_jve";
+				locl[4]  = "#relg_cco";
+				locl[5]  = "#relg_jba";
+				locl[6]  = "#relg_lgs";
+				locl[7]  = "#relg_bnu";
+				locl[8]  = "#relg_tro";
+				locl[9]  = "#relg_can";
+				locl[10] = "#relg_jgs";
+				
+				mapa[1]  = "#cheg_fln";      
+				mapa[2]  = "#cheg_cua";
+				mapa[3]  = "#cheg_jve";
+				mapa[4]  = "#cheg_cco";
+				mapa[5]  = "#cheg_jba";
+				mapa[6]  = "#cheg_lgs";
+				mapa[7]  = "#cheg_bnu";
+				mapa[8]  = "#cheg_tro";
+				mapa[9]  = "#cheg_can";
+				mapa[10] = "#cheg_jgs";
+				
+				var c = $("#qual").val();
+				c++;
+				atua = c;
+				if (c == 10)
+					c = 0;
+				$('#qual').val(c);
+				n = c + 1;
+				
+				$(locl[atua]).slideUp();
+				$(mapa[atua]).slideUp();
+				sleep(500);
+				$(locl[n]).slideDown();
+				$(mapa[n]).slideDown();
+				
+			}, 5000);
+
+		});
+
+	</script>
+	<!------------------------------------------FORMATA LADO DIREITO DA TELA ------------------------------------------>
+	<img src="/assets/blank.png" border="0" height="7"/><br>
+		<img src="topo_dirt.jpg" border="0" height="8"/><br>
+		<div class="demo2"><br>
+			<div class="text_pgra">VEJA OS ENDEREÇOS DE HEMOCENTROS EM TODO BRASIL</div>
+			<div id="relg_fln" class="horario">
+			<img src="/assets/blank.png" border="0" height="15" /><br/>
+			<div class="text_vgra">
+				<h2><img src="/assets/gotapeq.gif"><a href="Cidades.html" class="linkverm">Clique aqui e veja no Mapa</a></h2>
+			</div>
+			</div>
+			<div id="cheg_fln" class="direita">
+			<img src="/assets/gota.jpg" align="center" border="0" />
+			<img src="/assets/blank.png" border="0" height="15" /><br/>
+			<img src="/assets/blank.png" border="0" height="8" /><br/>
+			</div>
+			<input type="hidden" id="qual" value="0"></div>
+		<img src="/assets/rodp_dirt.jpg" border="0" height="8"/></br>
+	 
+		<div><img src="/assets/blank.png" width="375" height="8" /><br/></div>
+
+		<!------------------------------------------------------------------------------------------------------>
+	
+		<!--CLASSE PARA CONFIGURAR AS FOTOS--->
+	<div class="foto_dirt" align="center">
+		<div class="linearBg2">
+		<br/>
+			<a href="http://www.youtube.com/watch?v=3VFFhA6RMj4" class="linkbran">
+			Veja exemplos Reais de pessoas que passaram por transplante.</a>
+				<div class="text">Veja o processo que é realizado para retirada da medula.<br/>
+			Veja exemplo de doadores voluntários.</br>
+			Seja você também um voluntário de doação de Medula óssea!!<br/>
+			Escolha uma comunidade no facebook e participe!!<br/>
+			ESCOLHA UM LINK ABAIXO<br/><br/>
+			</div>			
+		<br/><br/>
+			<a href="http://entretenimento.r7.com/famosos-e-tv/noticias/transplante-de-medula-drica-moraes-e-bem-sucedido-20100707.html ">
+				<img src="/assets/CISSA.jpg" border="0" width="150" height="150"/>
+			</a>
+			<a href="http://www.youtube.com/watch?v=AplqMV0SPBs">
+				<img src="/assets/Reinaldo.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="http://www.youtube.com/watch?v=CkaDEI9yQZw&feature=related">
+				<img src="/assets/Cissa_G.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="http://www.youtube.com/watch?v=RHIYv9ZXlE8">
+				<img src="/assets/doe.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="http://www.youtube.com/watch?v=3VFFhA6RMj4">
+				<img src="/assets/compatibilidade.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="http://www.youtube.com/watch?v=9JMZ75GT0wM&feature=related">
+				<img src="/assets/processo.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="http://danieleaprendendoasealimentar.blogspot.com/">
+				<img src="/assets/AnaLuiza.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="http://www.inca.gov.br/conteudo_view.asp?ID=677/">
+				<img src="/assets/inca.gif" border="0" width="150" height="150" />
+			</a>
+			<a href="http://www.facebook.com/group.php?gid=146201692061443/">
+				<img src="/assets/facebook.jpg" border="0" width="150" height="150" />
+			</a>
+			<a href="	http://pt-br.facebook.com/notes/associa%C3%A7%C3%A3o-portuguesa-contra-a-leucemia/quem-se-pode-tornar-dador-de-medula-%C3%B3ssea-e-como-o-pode-fazer-crit%C3%A9rios-de-exclu/10150377583314697?ref=nf">
+				<img src="/assets/facebook2.jpg" border="0" width="150" height="150" />
+			</a>
+			
+		
+				<img src="/assets/blank.png" width="375" height="8"  /><br>
+			<div class="text_bran" align="left" style="margin-left: 15px;">
+				<div class="linh_dirt">&nbsp;</div> 
+			</div>
+		</div>
+	</div>	
+	</div>
+	</div>
+	<!-------------------------------------------RODAPÉ------------------------------------------------------>	
+	<div class="rodp">
+		<div class="rodp_intr">
+		
+			<div class="head_rodp">
+				<div class="titl_rodp">CADMEDUOS</div>
+				<div class="text_rodp"><a href="http://www.pucminas.br/destaques/" class="linkrodp">PucMinas</a></div>
+			</div>
+		
+			<div class="cabc_rodp">
+				<div class="titl_rodp">Medula Ossea</div>
+				<div class="text_rodp"><a href="SaibaMais.html" class="linkrodp">O que é?</a></div>
+				<div class="text_rodp"><a href="SaibaMais.html" class="linkrodp">Tipos</a></div>
+				<div class="text_rodp"><a href="http://www.ameo.org.br/interna2.php?id=5" class="linkrodp">Leia mais - AME</a></div>
+				<div class="text_rodp"><a href="http://www2.inca.gov.br/wps/wcm/connect/inca/portal/home" class="linkrodp">Leia mais - INCA</a></div>
+			</div>		
+		<!------------------------------------------------------------------------------------------------------>	
+			<div class="gota_rodp">
+			<img src="/assets/gota.png" border="0" alt="gota" />
+			</div>		
+			<div class="/assets/head_rodp">			
+			</div>		
+			<div class="cabc_rodp">				
+			</div>
+		</div>		
+		<div class="rodp_baix">
+			<div class="text_cred">	PUC 2011 © Todos os direitos reservados<br/>
+			<a href="http://www.pucminas.br/destaques/" target="_blank" class="linkrodp">
+			PROJETO CADMEDUOS -  Desenvolvimento Web </a>
+			</div>
+		</div>
+  </div>
+</body>
+</html>

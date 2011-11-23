@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<!--
+				
+				========  Projeto apresentado a disciplina de Tecnologia Web  ====== 
+				Professor:orientador: Marcos Rodrigo Sol
+
+				Nome do aplicativo: CADMEDUOS
+
+				Objetivo: Criar um aplicativo Web para auxiliar as pessoas 
+				de como se tornar um voluntário na doação de Medula óssea
+
+				Mara de Carvalho Silva e Wellington de Sousa
+				
+						
+		-->
+		<head>
+		<title>CADMEDUOS</title>
+		<link href="commix.css" rel="stylesheet" type="text/css">
+		<link href="menu.css" rel="stylesheet" type="text/css">
+		<script src="swf.js" type="text/javascript"></script>
+		<script src="nuns.js" type="text/javascript"></script>
+		<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="jquery.validate.js"></script>
+		<!--EXECUTA O MAPA-->
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.maphilight.min.js"></script>
+		<!---------------------------------------------------------------------------------------------->
+		<link rel="stylesheet" type="text/css" href="wt-rotator.css"/>
+		<script type="text/javascript" src="jquery.easing.1.3.min.js"></script>
+		<script type="text/javascript" src="jquery.wt-rotator.min.js"></script>    
+		<script type="text/javascript" src="preview.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+		<meta name="description" content="CADMEDUOS - Cadastramento de Voluntários de Doação de Medula óssea"> 
+		<meta name="keywords" content="FAÇA PARTE DESSE TIME, SEJA UM VOLUNTÁRIO DE DOAÇÃO DE MEDULA ÓSSEA!!">
+		</head>
+		<body>
+		<!----MOSTRA O LOGO NO CANTO SUPERIOR-->
+		<div class="topo">
+			<div class="topo_tudo">
+				<div class="topo_esqd"><a href="Cidades.html"><img src="/assets/logo.png" border="0" /></a></div>
+				<div class="topo_dirt">&nbsp;</div>
+			</div>
+		</div>
+		<div align="center">
+		<table width="1000" border="0" cellpadding="0" cellspacing="0">
+		  <tr>
+				<td height="38" width="81" bgcolor="#3D1314">&nbsp;</td>
+				<td>
+				<!--EXIBE OS MENUS DISPONIVEIS-->
+					 <div class="menu4">
+								<ul><li><a href="Inicio.html" class="link4">Inicio</a></li></ul>
+								<ul><li><a href="FaleConosco.html" class="link4">Fale Conosco</a></li></ul>
+								<ul><li><a href="QuemSomos.html" class="link4">Quem Somos</a></li></ul>
+								<ul><li><a href="SaibaMais.html" class="link4">Saiba Mais</a></li></ul>
+								<ul><li><a href="Cidades.html" class="link4">Mapa do Brasil</a></li></ul>
+					</div> 
+				</td>
+		  </tr>
+		</table>
+		<!---------------------------------------------------------------------------------------------->
+		</div><div class="corp"> 
+		<div class="corp_prin">
+		<img src="/assets/blank.png" border="0" height="7"/><br>
+		<img src="/assets/topo_prin.jpg" border="0" height="8"/><br>
+		<div class="demo">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		  <tr>
+			<td colspan="3">&nbsp;</td>
+		  </tr>
+		  <tr>
+			<td valign="top">
+				<div class="titl_prin">
+				HEMOCENTROS
+				<br/></div>
+		<!------------------------------MOSTRA MAPA---------------------------------------------------------------->
+		<h1>Hemocentros do Brasil</h1>
+		<p>Localize o Hemocentro mais próximo de você! Clique em sua região no mapa para listar
+		 os endereços de outros estados.</p>
+		<img src="/assets/mapa.jpg"  alt="Mapa do Brasil" border="0" usemap="#Map"class="map"  /><map name="Map" id="Map"><area shape="poly" coords="1,137,70,153,70,158,56,168,48,168,38,172,37,169,35,156,29,
+		161,21,162,18,158,11,159,11,149" title="Acre" href="Acre.html" /><area shape="poly" 
+		coords="339,128,356,143,365,127" title="Alagoas" href="Alagoas.html" /><area shape="poly" 
+		coords="94,35,70,51,53,38,47,43,32,43,33,51,37,49,39,55,32,55,32,63,37,70,38,74,35,103,20,105,6,122,6,130,2,136,71,154,87,145,100,134,
+		117,138,147,137,151,122,146,116,152,112,165,73,151,66,138,55,137,50,127,53,123,55,124,61,116,59,115,68,103,61,100,38,93,34" title="Amazonas" 
+		href="Amazonas.html" /><area shape="poly" coords="174,27,194,27,204,6,209,9,212,22,217,30,223,32,
+		222,35,218,37,203,58,193,44,175,26" title="Amapá" href="Amapa.html" /><area shape="poly" coords="271,
+		142,265,166,268,187,286,178,325,196,318,208,327,217,330,212,332,206,329,204,334,195,334,169,336,166,333,164,338,165,345,152,340,142,339,127,326,122,
+		318,128,311,124,297,130,279,147" title="Bahia" href="Bahia.html" /><area shape="poly" coords="306,68,
+		317,66,338,78,340,81,345,84,334,98,334,112,316,112,317,108" title="Ceará" href="Ceara.html" />
+		<area shape="poly" coords="238,188,253,188,253,202,239,203" title="Distrito Federal" href="Brasilia.html" />
+		<area shape="poly" coords="321,212,306,241,314,248,326,232,327,216" title="Espírito Santo" href="EspiritoSanto.html" 
+		/><area shape="poly" coords="206,221,227,231,253,220,260,188,268,187,265,168,246,172,225,168,205,205" title="Goiás"
+		 href="Goias.html" /><area shape="poly" coords="257,55,268,57,275,62,275,
+		73,288,65,302,67,293,79,293,106,274,114,266,130,271,141,261,137,261,121,251,117,243,95,257,56" title="Maranhão" 
+		href="Maranhao.html" /><area shape="poly" coords="261,188,269,187,286,179,
+		325,196,319,208,321,212,300,254,283,257,268,263,255,237,224,238,225,233,253,220" title="Minas Gerais" href="MinasGerais.html" /><area shape="poly" coords="166,227,
+		160,246,163,249,164,264,184,263,187,276,198,276,224,240,226,232,205,220,181,217" title="Mato Grosso do Sul"
+		 href="MatoGrossoSul.html" /><area shape="poly" coords="116,138,148,137,151,124,165,140,227,139,223,155,225,167,206,206,206,220,181,217,167,227,161,221,155,216,155,
+		209,139,210,134,201,137,192,131,185,137,159,120,159,117,138" title="Mato Grosso" 
+		href="MatoGrosso.html" /><area shape="poly" coords="136,40,154,33,165,
+		31,163,27,174,27,185,34,203,58,193,65,200,64,204,72,203,65,215,58,215,53,219,49,237,49,231,59,229,62,221,63,218,61,209,62,209,68,213,65,214,69,
+		217,65,227,65,226,80,227,87,233,94,228,73,236,61,239,62,237,58,240,51,258,55,226,140,165,140,146,117,152,112,165,73,151,66,138,54" title="Pará" 
+		href="Para.html"/>
+		<area shape="poly" coords="335,98,335,112,349,120,370,108,369,100,349,105" title="Paraíba" 
+		href="Paraiba.html" /><area shape="poly" coords="370,109,372,116,364,127,340,
+		128,325,123,316,130,310,124,316,111,334,112,349,121" title="Pernambuco" href="Pernanbuco.html" />
+		<area shape="poly" coords="302,67,306,68,317,107,310,125,295,132,279,147,270,141,266,130,274,114,294,105,293,79" title="Piauí" href="Piaui.html" /><area shape="poly" 
+		coords="198,276,197,291,204,298,226,301,248,293,250,291,247,289,254,287,255,
+		282,237,266,207,264" title="Paraná" href="Parana.html" /><area shape="poly" coords="280,258,290,
+		264,304,263,308,257,314,254,313,248,306,241,300,254" title="Rio de Janeiro" href="RioJaneiro.html" />
+		<area shape="poly" coords="343,84,351,88,361,86,366,91,369,101,349,104,335,99" title="Rio Grande do Norte" 
+		href="RioGrandeNorte.html" />
+		<area shape="poly" coords="72,155,75,155,84,153,86,160,87,167,90,173,97,177,105,177,122,185,
+		131,185,137,159,120,159,116,138,101,134,88,146,75,152" title="Rondônia" href="Rondonia.html" />
+		<area shape="poly" coords="78,16,94,17,97,19,100,16,118,8,116,4,124,4,
+		124,9,128,13,127,16,124,19,127,22,127,37,137,41,137,
+		50,125,54,123,61,115,59,115,69,104,62,100,37,94,35" title="Roraima" href="Roraima.html" /><area shape="poly" coords="202,308,190,318,175,339,176,341,179,
+		339,189,343,189,347,198,346,212,359,212,362,210,366,215,368,219,364,219,359,221,353,220,351,229,338,227,335,230,333,234,337,222,352,225,
+		354,239,333,240,325,225,309" title="Rio Grande do Sul" href="RioGrandeSul.html" /><area shape="poly" coords="204,
+		298,203,307,223,309,241,324,249,316,248,294,226,301" title="Santa Catarina" href="SantaCatarina.html" />
+		<area shape="poly" coords="346,153,354,142,339,128,339,143" title="Sergipe" href="Sergipe.html" />
+		<area shape="poly" coords="225,239,254,237,268,263,281,258,284,262,
+		281,262,282,267,276,271,271,271,255,282,237,266,207,263" title="São Paulo" href="SaoPaulo.html" />
+		<area shape="poly" coords="243,97,251,118,260,121,261,137,
+		271,142,265,167,248,172,225,168,222,155,226,138" title="Tocantins" href="Tocantins.html" /></map>
+		<script type="text/javascript"> 
+		$.fn.maphilight.defaults = {
+			fill: true,
+			fillColor: 'ffffff',
+			fillOpacity: 0.2,
+			stroke: true,
+			strokeColor: 'cccccc',
+			strokeOpacity: 0.4,
+			strokeWidth: 1,
+			fade: true,
+			alwaysOn: true,
+			neverOn: false,
+			groupBy: false
+		}
+		$(function() {
+			$('.map').maphilight();
+		});
+		</script>
+		<!----------------------------------------------------------------------------------------------->
+		<br/>
+		fonte: http://www.prosangue.sp.gov.br/hemocentros-do-brasil/
+			<td valign="top">
+				</div><!--FECHA CLASSE DEMO-->
+			</td>
+		  </tr>
+		</table>
+		 <!----FORMATACAO DO LADO DIREITO DA TELA--->
+		</div>
+		<img src="/assets/rodp_prin.jpg" border="0" height="8"/>
+		</div>	 
+		<div class="corp_meio">&nbsp;</div>
+		<div class="corp_dirt">		 
+			<img src="/assets/blank.png" border="0" height="7"/><br>
+			<img src="/assets/topo_dirt.jpg" border="0" height="8"/><br>			
+			<div class="demo2"><br>				
+				<div class="text_pgra">	
+				FAÇA PARTE DESSE TIME, SEJA UM VOLUNTÁRIO DE DOAÇÃO DE MEDULA ÓSSEA!!!<br/>
+				ESCOLHA SEU ESTADO E VEJA O HEMOCENTRO DE SUA REGIÃO.<br/>
+				:::VÁ ATÉ LÁ E DEIXE SUA AMOSTRA!!:::<br/>
+				<br/><br/><br/>
+				<img src="/assets/Coracao.jpg" width="375" height="300" />	
+				</div>			
+			</div>				
+			<img src="/assets/rodp_dirt.jpg" border="0" height="8"/></br>	 
+		<div><img src="blank.png" width="375" height="8" /><br/></div>
+		<!---------------------------------------------------------------------------------------------->
+		</div>
+		</div>
+	
+		<!--<img src="rodp_prin.jpg" border="0" height="8"/>-->
+		</div>
+		<!---------------------------------------------------------------------------------------------->		 
+		<div id="corpodireito">			
+		<br class="limpar"/>						
+		<br class="limpar">			 
+		<div id="fundo_baixo_direito">
+			<div id="canto_esq_baixo">		
+			</div>
+			<div id="canto_dir_baixo"></div>
+		</div>		
+		<br class="limpar" /></div></div>
+		<div id="fim-rodape"> 
+		</div>
+		</div>
+		</div>
+		</center>
+		<!--SCRIPT ANALITYCS PARA FUNDAÇÃO PRO-SANGUE -->
+		<script type="text/javascript">
+			  var _gaq = _gaq || [];
+				  _gaq.push(['_setAccount', 'UA-23874125-1']);
+				  _gaq.push(['_trackPageview']);
+				
+				  (function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				  })();
+				
+				</script>		
+				<img src="/assets/blank.png" border="0" height="7"/>
+				<div class="linh_prin">&nbsp;</div>
+				</td>
+			<td>&nbsp;</td>
+			<td valign="top">
+				</div><!--FECHA CLASSE DEMO-->
+			</td>
+		  </tr>
+		</table> 		
+		<!-------------------------------------------RODAPÉ------------------------------------------------------>	
+			<div class="rodp">
+				<div class="rodp_intr">				
+					<div class="head_rodp">
+						<div class="titl_rodp">CADMEDUOS</div>
+						<div class="text_rodp"><a href="http://www.pucminas.br/destaques/" class="linkrodp">PucMinas</a></div>
+					</div>				
+					<div class="cabc_rodp">
+						<div class="titl_rodp">Medula Ossea</div>
+						<div class="text_rodp"><a href="SaibaMais.html" class="linkrodp">O que é?</a></div>
+						<div class="text_rodp"><a href="SaibaMais.html" class="linkrodp">Tipos</a></div>
+						<div class="text_rodp"><a href="http://www.ameo.org.br/interna2.php?id=5" class="linkrodp">Leia mais - AME</a></div>
+						<div class="text_rodp"><a href="http://www2.inca.gov.br/wps/wcm/connect/inca/portal/home" class="linkrodp">Leia mais - INCA</a></div>
+					</div>		
+				<!------------------------------------------------------------------------------------------------------>	
+					<div class="gota_rodp">
+					<img src="/assets/gota.png" border="0" alt="gota" />
+					</div>		
+					<div class="head_rodp">			
+					</div>		
+					<div class="cabc_rodp">				
+					</div>
+				</div>		
+				<div class="rodp_baix">
+					<div class="text_cred">	PUC 2011 © Todos os direitos reservados<br/>
+					<a href="http://www.pucminas.br/destaques/" target="_blank" class="linkrodp">
+					PROJETO CADMEDUOS -  Desenvolvimento Web </a>
+					</div>
+				</div>
+		  </div>
+</body>
+</html>
